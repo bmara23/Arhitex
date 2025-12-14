@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mara Belce">
+    <meta name="keywords" content="Arhitectură, Portofoliu profesional, Site personal">
+    <meta name="description" content="Siteul personal al unui arhitect bine priceput">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arhitex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+        }
+
+        .sus {
+            text-align: center;
+            color: rgb(72, 27, 27);
+        }
+
+        .cul {
+            background-color: rgb(241, 222, 198);
+        }
+
+        .hover:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 30px;
+            border: 3px solid rgb(72, 27, 27);
+            margin: 50px auto;
+            background-color: rgb(241, 222, 198);
+            width: 65%;
+            text-align: justify;
+        }
+
+        .titlu {
+            box-sizing: border-box;
+            background-color: rgb(255, 245, 234);
+            padding: 1px;
+            margin: 5px;
+            margin-bottom: 20px;
+        }
+
+        .txtcard {
+            box-sizing: border-box;
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(255, 245, 234);
+        }
+
+        .ptext {
+            font-size: large;
+        }
+
+        .badge-verde {
+            margin: 15px;
+            background-color: rgb(199, 241, 125);
+        }
+
+        .badge-v {
+            background-color: rgb(151, 190, 82);
+        }
+
+        .badge-rosu {
+            margin: 15px;
+            background-color: rgb(231, 88, 88);
+        }
+
+        .badge-r {
+            background-color: rgb(199, 54, 54);
+        }
+
+        .jos {
+            background-color: rgb(241, 222, 198);
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-left img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer-center {
+            text-align: center;
+            color: grey;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-right img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top cul px-5 py-3">
+        <div class="container">
+            <a class="navbar-brand hover" href="index.html">
+                <img src="urban-planning.png" alt="Logo simplu cu o foaie ce are colțul indoit, un desen și un creion"
+                    width="24" height="24" class="d-inline-block align-text-top">
+                Arhitex</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3 hover">
+                        <a class="nav-link active" aria-current="page" href="#despre">Despre</a>
+                    </li>
+                    <li class="nav-item px-3 hover">
+                        <a class="nav-link" href="#servicii">Servicii</a>
+                    </li>
+                    <li class="nav-item px-3 hover">
+                        <a class="nav-link" href="#filosofie">Filosofie</a>
+                    </li>
+                    <li class="nav-item px-3 hover">
+                        <a class="nav-link" href="#portofoliu">Portofoliu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="sus pt-3 mt-3">Arhitex</h1>
+    <p class="sus pb-3 mb-3 ptext">Unde ideile devin spațiu</p>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade carusel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Portofoliu-profesional/portofoliu-arhitect/architecture-.jpg" class="d-block w-100"
+                    alt="Living room cu bucătărie și o terasă">
+            </div>
+            <div class="carousel-item">
+                <img src="Portofoliu-profesional/portofoliu-arhitect/bath-1818944.jpg" class="d-block w-100"
+                    alt="Baie cu o chiuvetă și o fereastră uriașă cu vedere spre mare">
+            </div>
+            <div class="carousel-item">
+                <img src="Portofoliu-profesional/portofoliu-arhitect/hallway.jpg" class="d-block w-100"
+                    alt="Hol cu picturi pe pereți și scări">
+            </div>
+            <div class="carousel-item">
+                <img src="Portofoliu-profesional/portofoliu-arhitect/kitchen.jpg" class="d-block w-100"
+                    alt="Bucătărie cu o masă și scaune">
+            </div>
+            <div class="carousel-item">
+                <img src="Portofoliu-profesional/portofoliu-arhitect/living-room-couch-interior-room-584399.jpeg"
+                    class="d-block w-100" alt="Living room cu o canapea, o masă de cafea, plante și ferestre mici">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="box">
+        <div class="titlu">
+            <h2>Arhitectură care dă formă ideilor</h2>
+        </div>
+        <p class="ptext">Arhitectura reprezintă pentru mine un proces de explorare continuă, în care ideile prind formă
+            prin
+            echilibru, funcționalitate și expresie estetică. Fiecare proiect pornește de la o analiză atentă a
+            contextului, a cerințelor beneficiarului și a specificului locului, fiind dezvoltat ca un răspuns clar și
+            coerent la aceste elemente.
+
+            Pun accent pe relația dintre spațiu, lumină și materialitate, urmărind ca fiecare intervenție să fie bine
+            integrată și relevantă în timp. Arhitectura nu este doar despre formă, ci despre modul în care spațiile sunt
+            utilizate, percepute și trăite zi de zi.
+        </p>
+    </div>
+
+    <div class="box">
+        <div class="titlu">
+            <h2 id="despre">Despre mine</h2>
+        </div>
+        <p class="ptext">Sunt arhitect și îmi desfășor activitatea concentrându-mă pe proiecte care pun în valoare
+            relația dintre om
+            și spațiu. Parcursul meu profesional include proiecte rezidențiale, comerciale și de amenajare interioară,
+            experiență care mi-a permis să abordez fiecare temă cu o perspectivă echilibrată și adaptată cerințelor
+            actuale.
+
+            Cred într-un proces de lucru clar, bazat pe comunicare și colaborare, în care beneficiarul este implicat în
+            fiecare etapă importantă. Atenția la detalii, coerența soluțiilor și responsabilitatea față de mediul
+            construit sunt principii care ghidează fiecare proiect pe care îl dezvolt.</p>
+    </div>
+
+    <div class="box">
+        <div class="titlu">
+            <h2 id="servicii">Servicii</h2>
+        </div>
+        <p class="ptext py-3">Prețurile sunt orientative și pot varia în funcție de complexitatea și specificul fiecărui
+            proiect.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="Portofoliu-profesional/architecture-1857175_1920.jpg" class="card-img-top"
+                        alt="Imagine cu o schiță a unui proiect">
+                    <div class="card-body txtcard">
+                        <h5 class="card-title">Proiectare arhitecturală</h5>
+                        <p class="card-text">Realizarea conceptelor arhitecturale adaptate contextului, cerințelor
+                            funcționale și identității beneficiarului. Fiecare proiect este gândit pentru a îmbina
+                            estetica cu soluții tehnice eficiente.</p>
+                        <b>Preț orientativ: de la 25 – 45 €/mp</b>
+                        <button type="button" class="btn badge-verde">
+                            Disponibile <span class="badge badge-v">60</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Portofoliu-profesional/building-1080591_1280.jpg" class="card-img-top"
+                        alt="Un constructor în fața unei case cu o schiță în mână">
+                    <div class="card-body txtcard">
+                        <h5 class="card-title">Case individuale și locuințe colective</h5>
+                        <p class="card-text">Proiectarea locuințelor care răspund nevoilor reale de locuire, punând
+                            accent pe confort, lumină și relația cu exteriorul. Soluțiile sunt personalizate în
+                            funcție de stilul de viață și buget.</p>
+                        <b>Preț orientativ: de la 30 – 55 €/mp</b>
+                        <button type="button" class="btn badge-verde">
+                            Disponibile <span class="badge badge-v">30</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Portofoliu-profesional/office.jpg" class="card-img-top"
+                        alt="Un birou cu un calculator, o cană de cafea galbenă și un ghiveci stil suport de creioane">
+                    <div class="card-body txtcard">
+                        <h5 class="card-title">Spații comerciale și birouri</h5>
+                        <p class="card-text">Crearea unor spații funcționale și reprezentative, care susțin activitatea
+                            și imaginea brandului. Designul urmărește eficiența fluxurilor și o experiență plăcută
+                            pentru utilizatori și clienți.</p>
+                        <b>Preț orientativ: de la 35 – 65 €/mp</b>
+                        <button type="button" class="btn badge-rosu">
+                            Disponibile <span class="badge badge-r">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Portofoliu-profesional/pexels-photo-276267.jpeg" class="card-img-top"
+                        alt="Șabloane de culori pentru pereți">
+                    <div class="card-body txtcard">
+                        <h5 class="card-title">Amenajări interioare</h5>
+                        <p class="card-text">Optimizarea și personalizarea spațiilor interioare prin soluții coerente de
+                            design, materiale și detalii. Fiecare amenajare este concepută pentru a crea un ambient
+                            echilibrat și armonios.</p>
+                        <b>Preț orientativ: de la 20 – 40 €/mp</b>
+                        <button type="button" class="btn badge-rosu">
+                            Disponibile <span class="badge badge-r">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Portofoliu-profesional/work-3480187_1280.jpg" class="card-img-top"
+                        alt="Proiectul unei camere în format 3d și schița acesteia">
+                    <div class="card-body txtcard">
+                        <h5 class="card-title">Reabilitări și remodelări</h5>
+                        <p class="card-text">Intervenții asupra clădirilor existente pentru îmbunătățirea
+                            funcționalității și aspectului arhitectural. Proiectele respectă caracterul construcției și
+                            cerințele actuale de confort și eficiență.</p>
+                        <b>Preț orientativ: de la 30 – 60 €/mp</b>
+                        <button type="button" class="btn badge-verde">
+                            Disponibile <span class="badge badge-v">57</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Portofoliu-profesional/team-work.jpg" class="card-img-top"
+                        alt="Trei oameni care discută la un laptop">
+                    <div class="card-body txtcard">
+                        <h5 class="card-title">Consultanță de design și urbanism</h5>
+                        <p class="card-text">Oferirea de suport profesional în luarea deciziilor legate de arhitectură
+                            și dezvoltare urbană. Consultanța este orientată către soluții sustenabile și
+                            adaptate contextului legal.</p>
+                        <b>Preț orientativ: de la 50 – 80 €/oră</b>
+                        <button type="button" class="btn badge-verde">
+                            Disponibile <span class="badge badge-v">11</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="titlu">
+            <h2 id="filosofie">Filosofia de proiectare</h2>
+        </div>
+        <p class="ptext">Consider că arhitectura trebuie să fie în primul rând onestă, bine fundamentată și adaptată
+            contextului în
+            care se inserează. Fiecare decizie de proiectare este rezultatul unei analize funcționale și estetice, având
+            ca scop crearea unor spații clare, eficiente și ușor de utilizat.
+
+            Pun accent pe utilizarea rațională a materialelor, pe soluții sustenabile și pe detalii care contribuie la
+            calitatea spațiului pe termen lung. Arhitectura trebuie să răspundă nu doar nevoilor practice, ci și celor
+            emoționale, oferind confort, echilibru și identitate.</p>
+    </div>
+
+    <div class="box">
+        <div class="titlu">
+            <h2 id="portofoliu">Portofoliu</h2>
+        </div>
+        <p class="ptext">Proiectele prezentate în acest portofoliu reflectă parcursul meu profesional, diversitatea
+            tipologiilor
+            abordate și modul în care fiecare temă este adaptată unui context specific. Fiecare lucrare este rezultatul
+            unui proces atent de analiză, concept și dezvoltare, în care ideile inițiale sunt rafinate și transformate
+            în soluții clare și bine definite.
+
+            Portofoliul evidențiază atât proiecte finalizate, cât și propuneri conceptuale, ilustrând modul meu de lucru
+            și atenția acordată detaliilor, funcționalității și expresiei arhitecturale. Fiecare proiect spune o poveste
+            despre loc, utilizatori și procesul de creație.</p>
+    </div>
+
+    <div class="box">
+        <div class="titlu">
+            <h2>Contact</h2>
+        </div>
+        <p class="ptext">Dacă ai un proiect în minte sau dorești să colaborăm, te invit să mă contactezi. Sunt deschis
+            la idei noi și
+            provocări care pot duce la arhitectură de calitate.</p>
+    </div>
+
+    <footer class="jos">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a class="navbar-brand hover" href="index.html">
+                    <img src="urban-planning.png"
+                        alt="Logo simplu cu o foaie ce are colțul indoit, un desen și un creion" width="24" height="24"
+                        class="d-inline-block align-text-top">
+                    Arhitex</a>
+            </div>
+            <div class="footer-center">
+                <p>© 2025 Arhitex</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/profile.php?id=100071414862008&locale=ro_RO">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/bmara23/">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
